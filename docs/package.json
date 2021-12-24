@@ -10,7 +10,7 @@
   "repository": "/bhdoc",
   "scripts": {
     "dev": "vuepress dev src --temp .temp",
-    "build": "vuepress build"
+    "build": "vuepress build src"
   },
   "license": "MIT",
   "devDependencies": {
