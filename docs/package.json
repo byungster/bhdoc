@@ -9,9 +9,8 @@
   },
   "repository": "/bhdoc",
   "scripts": {
-    "dev": "vuepress dev src",
-    "build": "vuepress build src",
-    "docs:build": "vuepress build docs"
+    "dev": "vuepress dev src --temp .temp",
+    "build": "vuepress build"
   },
   "license": "MIT",
   "devDependencies": {
