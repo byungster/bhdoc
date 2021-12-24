@@ -34,8 +34,12 @@ module.exports = {
     lastUpdated: false,
     nav: [
       {
-        text: 'Guide',
-        link: '/guide/',
+        text: '소개',
+        link: '/intro/',
+      },
+      {
+        text: 'Portfolio',
+        link: '/portfolio/'
       },
       {
         text: 'Config',
@@ -47,13 +51,13 @@ module.exports = {
       }
     ],
     sidebar: {
-      '/guide/': [
+      '/intro/': [
         {
-          title: 'Guide',
+          title: '소개',
           collapsable: false,
           children: [
             '',
-            'using-vue',
+            'why-fe-developer',
           ]
         }
       ],

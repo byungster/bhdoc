@@ -4,7 +4,7 @@ heroImage: https://v1.vuepress.vuejs.org/hero.png
 heroText: My name
 tagline: Vuejs 하는 프론트엔드 개발자
 actionText: Portfolio →
-actionLink: /guide/
+actionLink: /intro/
 features:
 - title: 경력 및 주요 기술
   details: 🚩 6년　　　　　　　　　　　　　　　　⌛　2015.11 ~ 현재　　　　　　　　　　　↳　　Vuejs　　 　　 2018.06 ~ 현재　　　　↳　　HTML/CSS/JS　2015.11 ~ 2018.06　　↳　　ExpressJS, PHP　　　비주류
