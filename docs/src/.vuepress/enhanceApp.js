@@ -11,4 +11,11 @@ export default ({
   siteData // site metadata
 }) => {
   // ...apply enhancements for the site.
+  Vue.mixin({
+    mounted() {
+      import('vue-slick').then(function(m) {
+        Vue.use(m.default)
+      })
+    }
+  })
 }

@@ -2,9 +2,7 @@
 
 ## DB 쿼리 페이지
 
-<ClientOnly>
-    <AdminSlick/>
-</ClientOnly>
+<admin-slick/>
 
 ## 연락처 관리
 

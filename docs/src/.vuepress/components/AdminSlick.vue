@@ -21,14 +21,12 @@
 </template>
 
 <script>
-import Slick from "vue-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 
 export default {
-  components: { Slick },
-
+  name: 'AdminSlick',
   data() {
     return {
       slickOptions: {
