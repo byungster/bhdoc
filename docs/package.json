@@ -16,5 +16,8 @@
   "devDependencies": {
     "vuepress": "^1.5.3",
     "watchpack": "^1.6.1"
+  },
+  "dependencies": {
+    "vue-slick": "^1.1.16"
   }
 }

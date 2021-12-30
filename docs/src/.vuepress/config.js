@@ -31,33 +31,51 @@ module.exports = {
     editLinks: false,
     docsDir: '',
     editLinkText: '',
-    lastUpdated: false,
+    lastUpdated: true,
+    sidebarDepth: 3,
     nav: [
       {
-        text: '소개',
-        link: '/intro/',
+        text: 'Summary',
+        link: '/summary/'
       },
       {
-        text: 'Portfolio',
-        link: '/portfolio/'
+        text: 'Experience',
+        link: '/experience/'
       },
       {
-        text: 'Config',
-        link: '/config/'
+        text: 'Learning',
+        link: '/learning/'
       },
       {
-        text: 'VuePress',
-        link: 'https://v1.vuepress.vuejs.org'
-      }
+        text: 'Know-how',
+        link: '/know-how/'
+      },
     ],
     sidebar: {
-      '/intro/': [
+      '/summary/': [
         {
-          title: '소개',
+          title: 'Summary',
+          collapsable: false,
+          children: [
+              '',
+              'why-fe-developer',
+          ]
+        },
+        {
+          title: 'Experience',
+          path: '/experience/'
+        }
+      ],
+      '/experience/': [
+        {
+          title: 'Experience',
           collapsable: false,
           children: [
             '',
-            'why-fe-developer',
+            'workflow-editor',
+              'auto-campaign',
+              'admin',
+
           ]
         }
       ],
