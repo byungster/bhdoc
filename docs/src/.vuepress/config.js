@@ -85,7 +85,7 @@ module.exports = {
                     children: [
                         '',
                         'data-structure',
-                        'alogrithm',
+                        'algorithm',
                         'designpattern',
                         'flowchart',
                         'http',
