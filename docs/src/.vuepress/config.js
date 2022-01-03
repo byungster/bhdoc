@@ -89,7 +89,7 @@ module.exports = {
                         'data-structure',
                         'algorithm',
                         'design-pattern',
-                        'flowchart',
+                        'flow-chart',
                         'http',
                         'html-css-js',
                     ]
