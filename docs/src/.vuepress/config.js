@@ -58,7 +58,9 @@ module.exports = {
                     collapsable: false,
                     children: [
                         '',
-                        'why-fe-developer',
+                        'my-specialty-tech',
+                        'my-specialty-culture',
+                        'my-specialty-vision',
                     ]
                 },
                 {
