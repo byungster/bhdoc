@@ -88,10 +88,10 @@ module.exports = {
                         '',
                         'data-structure',
                         'algorithm',
-                        'designpattern',
+                        'design-pattern',
                         'flowchart',
                         'http',
-                        'htmlcssjs',
+                        'html-css-js',
                     ]
                 }
             ]
