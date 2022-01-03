@@ -1,5 +1,6 @@
-# 나의 기술
+# 경력사항 및 기술
 
+[[toc]]
 
 ## Front-end
 
@@ -34,13 +35,30 @@ ex. table의 select all은 특정 페이지에서만 쓸 수 있다? X 어디서
 
 ### HTML+CSS+Javascript
 
-단독으로 썼던 기간: 2015.11 ~ 2019.07 
+기간? 2015.11 ~ 2019.07 
+
+입사 후 프론트엔드 업무를 담당하게 되었습니다.   
+
+주로 JQuery와 Javascript를 사용하였습니다.
+- 자체 컴포넌트 Kit에 새로운 컴포넌트를 추가
+- 자체 컴포넌트를 개선/보완
+- 필요 시 새로운 페이지를 개발하였습니다. 
+ 
+Table 부터 Tooltip까지 전부 구현해서 쓴 상태였습니다.
+관련한 css는 공통, 페이지, 각 컴포넌트 별 css파일로 관리하였습니다.
 
 ## Back-end
 
-### NodeJS
-
 ### PHP
+
+프로젝트 자체는
+Front-end와 Back-end가 다른 프로젝트에 있지 않고, 하나의 페이지를 php파일 3개와 1개의 js파일이 구성하는 형태였습니다.
+따라서 Back-end와 함께 Front-end 업무도 수행하였습니다.
+
+<LegacyDesign />
+
+
+### NodeJS
 
 
 ### Java
