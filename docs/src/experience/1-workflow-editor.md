@@ -21,19 +21,32 @@ Flowchart를 구성하는 각 기호들은, 송신/수신/연락처 관리 등�
 ### 기술 스택 및 언어
 
 Vuejs와 Expressjs를 사용하였습니다.
-graph는 mxgraph라는 draw.io에서 만든 라이브러리를 
+graph는 mxgraph라는 draw.io에서 만든 라이브러리를
 임포트하여 커스터마이징했습니다.
 
 ## 2. 상세
 
 ### 2.1 Graph 컴포넌트
 
+mxgraph를 사용했으며, 이는 XML 기반 그래프 컴포넌트입니다.
+XML 기반이라함은, 그래프의 구성요소가 되는 노드와 엣지가 모두 <cell>이라는 xml 태그로 표현되기 때문입니다.
+N개의 <cell>은 <model>로 감싸지고, javascript의 DOMParser.parseFromString을 이용해 각 xml 노드를 html에 표현 가능한 요소로 렌더링합니다.
+
+각각의 스타일을 입히고, 리스너를 등록하여 프로퍼티를 세부설정하거나 실시간으로 저장되게 동작시킵니다.
+
+- 사진 1, 사진 2, 사진 3
+
+vue와 연동하기 위하여 다음과 같은 설계하였습니다.
+
 <design/>
 
-### 2.2 Workflow 컴포넌트
+그 결과, 성공적으로 Loading 할 수 있었습니다.
 
-### 2.3 Workflow Editor
+- 사진 넣기 (vue devtools 포함)
 
-### 2.4 그 외
+### 2.2 Workflow Editor
+
+
+### 2.3 그 외
 
 ## 3. 회고

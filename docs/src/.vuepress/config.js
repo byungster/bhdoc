@@ -74,9 +74,11 @@ module.exports = {
                     collapsable: false,
                     children: [
                         '',
-                        'workflow-editor',
-                        'auto-campaign',
-                        'admin',
+                        '1-workflow-editor',
+                        '2-componentize',
+                        '3-porting-to-vue',
+                        '4-auto-campaigns',
+                        '5-legacy',
                     ]
                 }
             ],
