@@ -75,7 +75,7 @@ module.exports = {
                     children: [
                         '',
                         '1-workflow-editor',
-                        '2-componentize',
+                        '2-componentize-on-vue',
                         '3-porting-to-vue',
                         '4-auto-campaigns',
                         '5-legacy',
