@@ -13,8 +13,8 @@ my name FE developer
 ## INTRODUCE
 
 특정 요구에 따라 vuejs 기반으로 웹을 만드는 것이 익숙한 개발자입니다.  
-다양한 유형의 데이터를 처리하기 위한 UI 개발 및 유지보수 경험이 풍부합니다.
-웹 서비스 리뉴얼 경험이 있습니다.  
+다양한 유형의 데이터를 처리하기 위한 UI 개발 및 유지보수 경험이 풍부합니다.  
+웹 서비스 리뉴얼 경험이 있습니다.    
 생산 과정에서의 병목이 되지 않기 위해 원활히 소통합니다.   
 효율적인 생산성을 유지하고자, 좋은 설계와 좋은 코드에 관심을 기울입니다.
 
@@ -109,7 +109,7 @@ A2P(Application to Person) 메시징 관련 웹 서비스의 DevOps를 담당하
 | 　인력 구성  |                                                  디자이너 1, 퍼블리셔 1, 기획 1, <b>FE 1</b>, BE 2                                                   |
 |  업무 툴   |                                          Redmine, GitLab, IntelliJ, Google Doc(draw.io,sheet 등),                                           |
 | 주요 업무 & 상세 역할 | - SMS 에디터 개발(Textarea) <br> - Grid 및 Table 개발 <br> - 기본 레이아웃 설계/개발 (패널, 팝업) <br> - Storybook 도입 <br> - 컴포넌트 문서화 <br> - 문서화의 편리성 정착 (주석 필수) 
-| 결과 & 성과 |                                               <br> UI 리뉴얼 <br> - UI 구성요소에 대한 체계적 관리 이해 및 터득                                                |
+| 결과 & 성과 |                                               - UI 리뉴얼 <br> - UI 구성요소에 대한 체계적 관리 이해 및 터득                                                |
 | 참고자료 |                                    [레이아웃과 페이지, 그리고 컴포넌트 개발 경험에 대하여](/experience/2-componentize-on-vue)                                     |
 
 
@@ -124,7 +124,7 @@ A2P(Application to Person) 메시징 관련 웹 서비스의 DevOps를 담당하
 | 　인력 구성  |                                                                  디자이너 1, 퍼블리셔 1, 기획 1, <b>FE 1</b>, BE 2                                                                  |
 |  업무 툴   |                                                                         Redmine, GitLab, IntelliJ                                                                         |
 | 주요 업무&상세 역할 | - UI 리뉴얼 요구사항 분석 <br> - 컴포넌트 프레임워크 조사 및 분석 (Vue,React,Svelt 등) <br> - 프로젝트 사이드 툴 조사 (Typescript, Unit/E2E 테스트, Lint, sass  등) <br> - Graph 라이브러리 조사 (draw.io, graphviz 등) 
-| 결과&성과 |                                                                           Vue-cli 기반 UI 리뉴얼 결정                                                                            |
+| 결과&성과 |                                                                           - Vue-cli 기반 UI 리뉴얼 결정에 기여                                                                           |
 | 참고자료 |                                                          [프로젝트 리뉴얼을 위한 조사 경험에 대하여](/experience/3-porting-to-vue)                                                          |
 
 ###  4. 2017.06 ~ 2018.12 / 플로우차트 제작도구 개발 및 정부 과제 수행 (18개월)
@@ -143,7 +143,7 @@ A2P(Application to Person) 메시징 관련 웹 서비스의 DevOps를 담당하
 | 참고자료 | [튜토리얼](https://youtu.be/_19bI5efWUY?t=267) <br> [플로우차트 개발 경험에 대하여 2](/experience/4-auto-campaigns) <br> [NTIS 일반 등재 정보](https://www.ntis.go.kr/outcomes/popup/srchTotlRschRpt.do?cmd=view&rstId=REP-2018-01110503225&srchTarget1=&srchTarget2=&srchText1=&srchText2=&returnURI=null&pageCode=RI_RSCHRPT_RST_DTL) |
 
 
-### 5. 2015.11 ~ 2017.06 레거시 서비스 개발 (19개월)
+### 5. 2015.11 ~ 2017.06 / 레거시 서비스 개발 (19개월)
 
 직원사이트와 서비스 사이트를 개발 및 유지보수하였습니다.
 
