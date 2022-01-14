@@ -1,52 +1,46 @@
 # 플로우 차트 개발 경험기
 
-![Workflow](/Animation2.gif)
+## 무엇인가?
 
-## 1. 요약
+회사의 요구에 따라, 사용자에게 Flowchart를 만들고 관리하는 도구를 제공합니다.
 
-### Generalization
-
-| 　구분　　　　 | 내용                                                            |
-|:-------:|:--------------------------------------------------------------|
-|  무엇인가?  | 일종의 [Flowchart](/learning/flowchart.html) 제작 도구입니다. | 
-|   누가?   | 기획자 1명, 디자인 1명, 프론트엔드 1명, 백엔드 2명                              | 
-|  어디서?   | 트럼피아                                                          | 
-|   언제?   | 2020년 11월 ~ 2021년 7월                                          | 
-|   왜?    | 고객이 원하는 플로우차트를 제작함으로써 메시징을 자동화할 수 있게 합니다.                     | 
-
-::: tip
-Flowchart를 구성하는 각 기호들은, 송신/수신/연락처 관리 등을 맡습니다.
+:::tip 주요 기능
+- Flowchart에 대한 생성/조회/수정/삭제 기능을 제공합니다.
+- Flowchart의 구성 기호들에 대한 생성/조회/수정/삭제 기능을 제공합니다.
+- Flowchart의 구성 기호들의 각 속성에 대한 생성/조회/수정/삭제를 제공합니다.
 :::
 
-### 기술 스택 및 언어
+아래는 주요 개발 항목에 대한 예시입니다.
 
-Vuejs와 Expressjs를 사용하였습니다.
-graph는 mxgraph라는 draw.io에서 만든 라이브러리를
-임포트하여 커스터마이징했습니다.
+### Flowchart <b>조회/삭제</b> 페이지
+![](https://imgur.com/Io2eLWv.png)
+목록페이지입니다.  
+여기서 사용자는 자신이 만든 Flowchart를 조회하거나 삭제할 수 있습니다.
 
-## 2. 상세
+### Flowchart <b>생성</b> 페이지
+![](https://imgur.com/TZL8nQo.png)
+![](https://imgur.com/1TZ3bu8.png)
+생성을 유도하는 Template List와 Preview 페이지입니다.  
+여기서 사용자는 "Start from scratch 버튼" 또는 "Choose Template 버튼"을 눌러 Flowchart를 생성할 수 있습니다.
 
-### 2.1 Graph 컴포넌트
+### Flowchart <b>수정</b> 페이지
+![](https://imgur.com/nOf9QtD.png)
+에디터페이지입니다.
+플로우차트의 세부사항을 수정하는 페이지입니다.
+세부사항은 "Flowchart 구성 기호"와 "Flowchart 구성 기호의 속성"입니다. 
 
-mxgraph를 사용했으며, 이는 XML 기반 그래프 컴포넌트입니다.
-XML 기반이라함은, 그래프의 구성요소가 되는 노드와 엣지가 모두 <cell>이라는 xml 태그로 표현되기 때문입니다.
-N개의 <cell>은 <model>로 감싸지고, javascript의 DOMParser.parseFromString을 이용해 각 xml 노드를 html에 표현 가능한 요소로 렌더링합니다.
+### Flowchart 구성 기호의 조회/생성/삭제 기능
+![](CellReadCreateDelete.git)
+![](https://imgur.com/syYW517.png)
+에디터페이지와 리포트페이지입니다.
+에디터페이지에서는 Flowchart 구성 기호를 보거나 추가하거나 삭제할 수 있습니다.
+리포트페이지에서는 각 구성요소에 대한 현재 상태를 파악할 수 있습니다.
 
-각각의 스타일을 입히고, 리스너를 등록하여 프로퍼티를 세부설정하거나 실시간으로 저장되게 동작시킵니다.
+### Flowchart 구성 기호의 수정 기능 + 속성에 대한 CRUD 기능
+![](CellUpdate.git)
+에디터페이지입니다.
+에디터 페이지의 패널에서 Flowchart 구성 기호의 속성을 생성/수정/추가/삭제할 수 있습니다.
+이로 인하여 Flowchart 구성 기호 또한 자동으로 수정됩니다.
 
-- 사진 1, 사진 2, 사진 3
-
-vue와 연동하기 위하여 다음과 같은 설계하였습니다.
-
-<design/>
-
-그 결과, 성공적으로 Loading 할 수 있었습니다.
-
-- 사진 넣기 (vue devtools 포함)
-
-### 2.2 Workflow Editor
-
-
-### 2.3 그 외
-
-## 3. 회고
+## 주요 담당 업무 및 역할
+위 언급한 페이지들을 개발하였고, 유지보수 중입니다.
