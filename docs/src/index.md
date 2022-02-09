@@ -1,7 +1,7 @@
 ---
 home: true
-heroImage: https://v1.vuepress.vuejs.org/hero.png
-heroText: My name
+heroImage: /my-thumbnail.jpg
+heroText: 김 병 호
 tagline: Vuejs 하는 프론트엔드 개발자
 actionText: 소개 →
 actionLink: /summary/
