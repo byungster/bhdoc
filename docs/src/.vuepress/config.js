@@ -72,6 +72,7 @@ module.exports = {
                 {
                     title: 'Experience',
                     collapsable: false,
+                    sidebarDepth: 2,
                     children: [
                         '',
                         '1-workflow-editor',
