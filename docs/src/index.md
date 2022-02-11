@@ -3,8 +3,8 @@ home: true
 heroImage: /my-thumbnail.jpg
 heroText: 김 병 호
 tagline: Vuejs 하는 프론트엔드 개발자
-actionText: 소개 →
-actionLink: /summary/
+actionText: 들여다보기 →
+actionLink: /portfolio/
 features:
 - title: 컴퓨터 공학적으로
   details: 알고리즘, 자료구조, 코딩 스타일을 왜 배웠는지 잊지 않고 야무지게 코딩합니다.

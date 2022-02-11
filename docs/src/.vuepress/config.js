@@ -35,12 +35,8 @@ module.exports = {
         sidebarDepth: 3,
         nav: [
             {
-                text: 'Summary',
-                link: '/summary/'
-            },
-            {
-                text: 'Experience',
-                link: '/experience/'
+                text: 'Portfolio',
+                link: '/portfolio/'
             },
             {
                 text: 'Learning',
@@ -52,34 +48,37 @@ module.exports = {
             },
         ],
         sidebar: {
-            '/summary/': [
+            '/portfolio/': [
                 {
-                    title: 'Summary',
-                    collapsable: false,
+                    title: '소개',
+                    collapsable: true,
                     children: [
                         '',
+                        'my-specialty-experience',
                         'my-specialty-tech',
                         'my-specialty-culture',
                         'my-specialty-vision',
                     ]
                 },
                 {
-                    title: 'Experience',
-                    path: '/experience/'
-                }
-            ],
-            '/experience/': [
-                {
-                    title: 'Experience',
-                    collapsable: false,
-                    sidebarDepth: 2,
+                    title: '경험 상세',
+                    collapsable: true,
                     children: [
-                        '',
                         '1-workflow-editor',
                         '2-componentize-on-vue',
                         '3-porting-to-vue',
                         '4-auto-campaigns',
                         '5-legacy',
+                    ]
+                },
+                {
+                    title: 'Portfolio',
+                    collapsable: true,
+                    children: [
+                        'p-api-sync-with-fe',
+                        'p-how-to-import-storybook-vue',
+                        'p-pwa',
+                        'p-vue-component',
                     ]
                 }
             ],

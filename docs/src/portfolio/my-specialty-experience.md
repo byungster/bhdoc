@@ -1,74 +1,7 @@
-# 김병호
-안녕하세요 vuejs하는 FE 개발자 김병호입니다.
-
-<my-profile/>
-
-## INTRODUCE
-
-특정 요구에 따라 vuejs 기반으로 웹을 만드는 것이 익숙한 개발자입니다.  
-다양한 유형의 데이터를 처리하기 위한 UI 개발 및 유지보수 경험이 풍부합니다.  
-웹 서비스 리뉴얼 경험이 있습니다.    
-생산 과정에서의 병목이 되지 않기 위해 원활히 소통합니다.   
-효율적인 생산성을 유지하고자, 좋은 설계와 좋은 코드에 관심을 기울입니다.
-
-또한,
-
-♻ Agile 프로세스 기반 개발에 익숙합니다.  
-🤝 수직/수평 의사소통 (Daily)에 익숙합니다.  
-📚 설계와 결과물에 대한 문서화 및 공유에 익숙합니다.  
-🔍 구현물에 대한 QA 검증 테스트에 익숙합니다.
-
-## EXPERIENCE
-
-### 트럼피아 / FE 개발자 / 2015.11 - 현재 (🚩 6년)
-
-A2P(Application to Person) 메시징 서비스를 위한 웹 어플리케이션의 DevOps 담당  
-
-- SMS, Email 컨텐츠 제작 서비스 개발 (단순 발송 지원)  
-- SMS, Email 응용 부가 서비스 개발 (발송 자동화 지원)
-- 대량의 연락처/발신/수신 정보 관리 서비스 개발
-- 관련 변동 이력 및 통계 Report 서비스 개발    
-- 직원 사이트 개발 ( 콘텐츠 모니터링 페이지, 발송 컨텐츠 템플릿 편집 페이지 )    
-
-## SKILL
-
-언어: HTML, CSS, JavaScript  
-프레임워크: Vuejs, Expressjs  
-형상관리: Git  
-업무관리: Redmine  
-
-
-## STUDY
-
-|   <!-- -->    |                                                                                     <!-- -->                                                                                      |
-|:-------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-|     최종 학력     | 컴퓨터 공학 학사<br> <span style="color:grey;font-size:11px">학사 : 평점 72.33 / 100, 학점은행 ( 2018년 5월 ~ 2019년 2월 수료 ) <br> 전문학사: 평점 3.83 / 4.5, 인하공업전문대학 ( 2011년 03월 ~ 2016년 2월 졸업 ) </span> |
-|     　자격증      |                                                  정보처리 산업기사 <br> <span style="color:grey;font-size:11px"> 2015년 5월 8일 취득  </span>                                                  |
-
-컴퓨터 시스템을 전공하여, CS 전공에 대한 이해가 있습니다.  
-알고리즘, 자료구조, 코딩 스타일 등을 왜 배웠는지 잊지 않고  
-🤝이유가 있는, 🔍앞뒤가 있는, 📚설명이 있는, 💕애정이 있는 코드를 작성합니다.
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
 # 주요 프로젝트
 
 아래 기술한 주요 프로젝트는 저의 Front-end 개발 기여도가 80% 이상인 것들입니다.    
-최신순으로 나열하여 작성하였습니다.  
+최신순으로 나열하여 작성하였습니다.
 
 ## 1. 플로우차트 제작도구 개발
 SVG 기반으로 플로우차트를 만들 수 있는 에디터를 개발하였습니다.
@@ -96,9 +29,9 @@ Vue.js, Vuex, ES5, ExpressJS, CSS3, HTML5
 
 #### 결과 및 성과
 - UX 관련 기획서 개선에 기여
-- 회사 주력 서비스 리뉴얼 및 업그레이드, 시장 경쟁력 ↑ 
+- 회사 주력 서비스 리뉴얼 및 업그레이드, 시장 경쟁력 ↑
 
-#### 참고 자료   
+#### 참고 자료
 - [trumpia's workbench](https://trumpia.com/product/workbench)
 - [플로우 차트 개발 경험에 대하여](/experience/1-workflow-editor)
 
@@ -121,16 +54,16 @@ Vuejs, Storybook
 
 #### 본인이 기여한 점
 - UI 컴포넌트 및 레이아웃 설계&개발
-  - Vue 기반 기본 레이아웃 (헤더, 사이드 바, 패널, 팝업)
-  - Vue 기반 Textarea (SMS 콘텐츠 작성 도구)
-  - Vue 기반 Grid 및 Table (목록)
-  - Vue 기반 기타 기본 템플릿 (Radio Select, Checkbox Select, Tooltip)
+    - Vue 기반 기본 레이아웃 (헤더, 사이드 바, 패널, 팝업)
+    - Vue 기반 Textarea (SMS 콘텐츠 작성 도구)
+    - Vue 기반 Grid 및 Table (목록)
+    - Vue 기반 기타 기본 템플릿 (Radio Select, Checkbox Select, Tooltip)
 - Storybook 도입
-  - 문서를 작성할 때와 발표할 때만 보는게 아니라 지속적인 최신화 및 관리 목적
-  - 개발자 본인들이 구현하는 UI 컴포넌트에 대한 문서화  
-  - Vue파일 생성시 자동 생성될 주석 템플릿 도입 (구현 상태에 대한 문서화 및 동적인 관리)
+    - 문서를 작성할 때와 발표할 때만 보는게 아니라 지속적인 최신화 및 관리 목적
+    - 개발자 본인들이 구현하는 UI 컴포넌트에 대한 문서화
+    - Vue파일 생성시 자동 생성될 주석 템플릿 도입 (구현 상태에 대한 문서화 및 동적인 관리)
 - 기존 레거시 BE와 연동
-  - XHR 핸들러 구현 (Axios Request&Response Interceptor)
+    - XHR 핸들러 구현 (Axios Request&Response Interceptor)
 - 특별한 요구에 대해선 외부 라이브러리를 import한 뒤, 기획팀과 타협하며 개발
 
 #### 결과 및 성과
@@ -199,7 +132,7 @@ HTML5, ES5, CSS3, jQuery, Ajax, PHP, Oracle Database, Apache Server
 
 #### 참고 자료
 
-- [튜토리얼](https://youtu.be/_19bI5efWUY?t=267)  
+- [튜토리얼](https://youtu.be/_19bI5efWUY?t=267)
 - [플로우차트 개발 경험에 대하여 2](/experience/4-auto-campaigns)
 - [NTIS 일반 등재 정보](https://www.ntis.go.kr/outcomes/popup/srchTotlRschRpt.do?cmd=view&rstId=REP-2018-01110503225&srchTarget1=&srchTarget2=&srchText1=&srchText2=&returnURI=null&pageCode=RI_RSCHRPT_RST_DTL)
 
