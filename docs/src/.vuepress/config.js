@@ -42,10 +42,6 @@ module.exports = {
                 text: 'Learning',
                 link: '/learning/'
             },
-            {
-                text: 'Know-how',
-                link: '/know-how/'
-            },
         ],
         sidebar: {
             '/portfolio/': [
@@ -85,15 +81,13 @@ module.exports = {
             '/learning/': [
                 {
                     title: 'Learning',
-                    collapsable: false,
+                    collapsable: true,
                     children: [
                         '',
-                        'data-structure',
-                        'algorithm',
-                        'design-pattern',
-                        'flow-chart',
-                        'http',
-                        'html-css-js',
+                        'html-css-javascript',
+                        'browser',
+                        'vue',
+                        'cs',
                     ]
                 }
             ]
