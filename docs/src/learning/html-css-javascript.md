@@ -170,6 +170,8 @@ Javascript에서 Object를 정의할 수 있는데,
 - String은 Object
 - 기타 등등 ..
 
+클래스 만들때 사용
+
 ## 4. Promise, Async Await
 주로 비동기 작업에 적합하다.
 
@@ -227,9 +229,6 @@ console.log(await hello()) // "Hello"
 메인스레드 하나에서 동작하기 땜에 콜 스택에 쌓이는 EC 중에
 당장 처리되지 않는 EC 들은 이벤트 큐에 쌓였다가 콜 스택에 배치되는거임
 :::
-
-### 쓰임새
-클래스 만들때 사용
 
 ## 7. Event Listener
 브라우저가 이벤트를 감지하는 방법
