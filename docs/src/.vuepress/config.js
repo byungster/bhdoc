@@ -60,21 +60,21 @@ module.exports = {
                     title: '경험 상세',
                     collapsable: true,
                     children: [
-                        '1-workflow-editor',
-                        '2-componentize-on-vue',
-                        '3-porting-to-vue',
-                        '4-auto-campaigns',
-                        '5-legacy',
+                        'experience/1-workflow-editor',
+                        'experience/2-componentize-on-vue',
+                        'experience/3-porting-to-vue',
+                        'experience/4-auto-campaigns',
+                        'experience/5-legacy',
                     ]
                 },
                 {
                     title: 'Portfolio',
                     collapsable: true,
                     children: [
-                        'p-api-sync-with-fe',
-                        'p-how-to-import-storybook-vue',
-                        'p-pwa',
-                        'p-vue-component',
+                        'detail/p-api-sync-with-fe',
+                        'detail/p-how-to-import-storybook-vue',
+                        'detail/p-pwa',
+                        'detail/p-vue-component',
                     ]
                 }
             ],
