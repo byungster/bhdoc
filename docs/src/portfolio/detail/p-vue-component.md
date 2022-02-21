@@ -9,7 +9,7 @@
 
 #### 핵심 메소드
 Vuex에 커밋
-```
+```javascript
 	/**
      * @public
      * @description 자동저장 발생 시 호출되는 함수이다. Header의 실시간 상태 문구를 최신화한다.
@@ -20,7 +20,7 @@ Vuex에 커밋
 ```
 
 Vuex에서 computed로 가져옴
-```
+```javascript
   computed: {
     recentStatusText() {
       return this.$store.getters['workflow/getRecentStatusText'];
@@ -47,7 +47,7 @@ API와 연동되는 여러가지 모달을 개발하였습니다.
 ### 마크업
 다른 프로젝트를 담당하는 팀원이 추가해놓은 [vue2-touch-events](https://www.npmjs.com/package/vue2-touch-events) 라이브러리를 활용하였습니다.
 
-```
+```html
     <transition-group tag="div" :name="transitionName" class="carousel-items">
       <div :key="current" class="carousel-item" :class="slides[current]" v-touch:swipe="swipe">
         <img :src="`/img/workbench/integrations/img_carousel_${slides[current]}.png`" ondragstart="return false;" v-touch:swipe="swipe" />
@@ -60,7 +60,7 @@ API와 연동되는 여러가지 모달을 개발하였습니다.
 - props로 slides될 이미지 Path가 담긴 배열을 전달받습니다.
 - data로 current라는 배열의 특정 요소를 지정하는 숫자를 갖습니다.
 
-```
+```javascript
   props: {
     slides: {
       type: Array,
@@ -84,7 +84,7 @@ API와 연동되는 여러가지 모달을 개발하였습니다.
 사용자 이벤트 리스너에 의해 실행되는 slide함수는 current 값을 변경시킵니다.
 current 값이 변경되면, watch에 의해 transition이 수행됩니다.
 
-```
+```javascript
 	methods: {
 		slide(dir) {
 	      this.current = dir;
@@ -104,7 +104,7 @@ current 값이 변경되면, watch에 의해 transition이 수행됩니다.
 
 터치 관련 사용자 이벤트가 발생하면 slide 함수를 호출합니다.
 
-```
+```javascript
 	test(dir, evt) {
       if (dir === 'left') {
         this.slide(1);
@@ -119,7 +119,7 @@ current 값이 변경되면, watch에 의해 transition이 수행됩니다.
 
 ### 마크업 및 CSS
 li 기반입니다.
-```
+```html
   <li class="report-card" :class="{dimmed: !item.isIntegrated}" @click="intoDetailPage(item.id)">
     <div class="info-intg-desc">
       <div>
@@ -167,7 +167,7 @@ li 기반입니다.
 ```
 
 ul로 감싸서 사용하도록 개발하였습니다.
-```
+```html
 <ul class="card-list">
     <the-card-workflow-templates
       class="template-card"
@@ -186,7 +186,7 @@ ul로 감싸서 사용하도록 개발하였습니다.
 ## 5. Table
 
 테이블 UI를 개발하고, 브라우저 너비 관련 Column Group 기능을 추가하였습니다.
-```
+```html
       <colgroup v-if="useDataSet">
         <col style="width:66px;" />
         <col v-show="header.name.isVisible" />
@@ -214,10 +214,10 @@ Watch에 의해 동작합니다.
 최상위 부모 A, A의 자식 B, 자식 B의 자식을 C라고 할때,
 
 #### 최상위 부모 A
+- data로 자식 B를 요소로 갖는 배열 "conditionGroup"을 갖습니다. 
+- v-for를 이용하여 렌더링하며, 자식 컴포넌트에게 해당하는 conditionGroup 요소 1개를 Props로 전달합니다.
 
-data로 자식 B를 요소로 갖는 배열 "conditionGroup"을 갖습니다. 
-v-for를 이용하여 렌더링하며, 자식 컴포넌트에게 해당하는 conditionGroup 요소 1개를 Props로 전달합니다.
-```
+```html
 <div v-if="branch.conditionGroups.length > 0">
   <the-condition-group
     v-for="(conditionGroup, index) in branch.conditionGroups"
@@ -238,7 +238,7 @@ v-for를 이용하여 렌더링하며, 자식 컴포넌트에게 해당하는 co
 props로 자식 A를 요소로 갖는 배열 "conditionGroup.conditions"를 갖습니다.
 v-for를 이용하여 렌더링하며, 자식 컴포넌트에게 해당하는 condition 요소 1개를 Props로 전달합니다.
 
-```
+```html
   <div v-if="conditionGroup.conditions && conditionGroup.conditions.length > 0">
     <the-condition
       v-for="(condition, index) in conditionGroup.conditions"
@@ -257,7 +257,7 @@ v-for를 이용하여 렌더링하며, 자식 컴포넌트에게 해당하는 co
 
 계층의 최하단에 존재하는 자식 C는 본인이 갖는 String을 Computed하여 렌더링합니다. (getValidProcessedText)
 
-```
+```html
   <div class="condition-box">
     <div class="condition-body" @mouseenter="changeBGColorStart" @mouseleave="changeBGColorEnd" :class="{dimmed: disableEdit}">
       <div class="valid" @click="clickedCondition">
@@ -278,7 +278,7 @@ Chip이라는 이름으로도 알려진 컴포넌트를 개발함과 동시에 �
 ### 마크업
 
 - 라벨
-```
+```html
   <div :class="{dimmed: disabled}">
     <span class="label">{{ labelText }}</span>
     <button class="btn-delete ico-x" style="cursor: default;"></button>
@@ -287,7 +287,7 @@ Chip이라는 이름으로도 알려진 컴포넌트를 개발함과 동시에 �
 
 - 라벨 텍스트
 Contentediable의 Span을 사용하여 개발하였습니다.
-```
+```html
 <ul @click="focusInput" v-click-outside="addLabel" class="select-combo-item">
     <li class="place-holder" v-if="labelList && labelList.length < 1 && placeHolder !== '' && placeHolderFlag">{{ placeHolder }}</li>
     <li v-for="label in labelList" :key="label.id">
@@ -341,14 +341,14 @@ Split 기능으로 구분된 영역을 확장/축소 하는 컴포넌트를 개�
 - 스크롤 바 추가
 
 #### 플로우차트 컨테이너 유틸
-    - 줌인/아웃
-	- 미니맵 (플로팅 컴포넌트)
-	- 마우스 오른쪽 클릭 콘텍스트 메뉴 (플로팅 컴포넌트)
-	   - 정렬
-	   - 복사/붙여넣기/복제/잘라내기
-	   - 언두/리두
-	- 실시간 경고창 (플로팅 컴포넌트)
-	- 플로우차트 노드 수정도구
+- 줌인/아웃
+- 미니맵 (플로팅 컴포넌트)
+- 마우스 오른쪽 클릭 콘텍스트 메뉴 (플로팅 컴포넌트)
+  - 정렬
+  - 복사/붙여넣기/복제/잘라내기
+  - 언두/리두
+- 실시간 경고창 (플로팅 컴포넌트)
+- 플로우차트 노드 수정도구
 
 
 ### 플로우차트 리포터 기능
@@ -375,7 +375,7 @@ Split 기능으로 구분된 영역을 확장/축소 하는 컴포넌트를 개�
 ## 12. 패널
 비동기로 패널 불러오기
 
-```
+```javascript
     getAsyncComponent(componentName) {
       let componentPath = Object.values(this.$global.panels).find(panel => panel.name === componentName).path;
       return () => ({

@@ -6,12 +6,10 @@
 ## 전역 설정 (Configuration)
 
 ### 파일 확장자(문서 작성 언어)
-    mdx 문법 기반
+- mdx 문법 기반
+- Vue Component를 만들 때 작성했던 주석은, mdx 문법에 의해 다음과 같이 구문을 작성해야한다.
 
-Vue Component를 만들 때 작성했던 주석은, mdx 문법에 의해 다음과 같이 구문을 작성해야한다.
-
-```
-
+```html
 // 위치시킬 디렉토리 
 <Meta title="공통 컴포넌트/LabelText" component={TheLabelText} />
 
@@ -23,24 +21,21 @@ Vue Component를 만들 때 작성했던 주석은, mdx 문법에 의해 다음�
 
 // 메소드와 이벤트에 대한 설명
 <ArgsTable of={TheLabelText} />
-
 ```
 
 
 ### 사용한 애드온
-```
-	addons: ['@storybook/addon-essentials', '@storybook/addon-links', '@storybook/addon-docs'],
+```javascript
+  addons: ['@storybook/addon-essentials', '@storybook/addon-links', '@storybook/addon-docs'],
 ```
 
 ### 글로벌 구성
 
-현재 프로젝트와 동일한 글로벌 구성으로 설정하 고자 preview.js를 	커스터마이징하였다.
-
-
+- 현재 프로젝트와 동일한 글로벌 구성으로 설정하 고자 preview.js를 	커스터마이징하였다.
 - 프로젝트에서 사용중인 커스텀 디렉티브 임포트
    - 툴팁, 검색 텍스트 하이라이팅, 터치이벤트, 클릭 아웃사이드
 
-```
+```javascript
 		Vue.directive('click-outside', ClickOutside);
 		Vue.directive('tooltip', Tooltip);
 		Vue.filter('highlight', TextHighlighter.highlight);
@@ -48,9 +43,9 @@ Vue Component를 만들 때 작성했던 주석은, mdx 문법에 의해 다음�
 ```
 
 
-	- 프로젝트에서 사용중인 스토어 임포트
+- 프로젝트에서 사용중인 스토어 임포트
 	
-```	
+```javascript
 		import Vuex from 'vuex';
 		import storybookStore from '@/stories/store.js';
 
@@ -60,9 +55,9 @@ Vue Component를 만들 때 작성했던 주석은, mdx 문법에 의해 다음�
 		Vue.prototype.$store = new Vuex.Store(storybookStore);
 ```
 
-	- 프로젝트에서 사용중인 공통 css 파일 임포트
+- 프로젝트에서 사용중인 공통 css 파일 임포트
 
-```
+```javascript
 		require('@/../public/publish/commonUi.css');
 		require('@/../public/publish/fontOpenSans.css');
 ```
@@ -72,7 +67,7 @@ Vue Component를 만들 때 작성했던 주석은, mdx 문법에 의해 다음�
 스토리북을 열면, 처음으로 Document가 표시되길 원했다.
 따라서 addon인 Docs의 Docs탭이 먼저 열리도록 onload 수정하였다.
 
-```
+```javascript
 		window.removeEventListener('load', clickDocsButtonOnFirstLoad);
 	    const docsButtonSelector = window.parent.document.evaluate("//button[contains(., 'Docs')]", window.parent.document, null, XPathResult.ANY_TYPE, null);
 
@@ -89,9 +84,9 @@ Vue Component를 만들 때 작성했던 주석은, mdx 문법에 의해 다음�
 
 #### Component 소개
 
-		Vue 컴포넌트 저작자에게 어떤 컴포넌트인지 설명을 요구한다.
+- Vue 컴포넌트 저작자에게 어떤 컴포넌트인지 설명을 요구한다.
 
-```
+```html
 		<script>
 		/**
 		 * 여기에 컴포넌트에 대한 설명을 작성해주세요.
@@ -109,9 +104,9 @@ Vue Component를 만들 때 작성했던 주석은, mdx 문법에 의해 다음�
 ```
 
 #### Method
-		Vue 컴포넌트가 수행할 행위에 해당하는 Method 저작자에게, 이 Method가 어떤 행위를 수행하는지 설명을 요구한다.
+- Vue 컴포넌트가 수행할 행위에 해당하는 Method 저작자에게, 이 Method가 어떤 행위를 수행하는지 설명을 요구한다.
 
-```
+```javascript
 		/**
 	     * @public
 	     *
@@ -138,9 +133,9 @@ Vue Component를 만들 때 작성했던 주석은, mdx 문법에 의해 다음�
 ```
 
 #### Emit (이벤트 발생을 부모 컴포넌트에게 알리는 경우)
-		Vue 컴포넌트의 주요 이벤트 중에 하나인 Emit의 용도는 무엇인지 설명을 요구한다.
+- Vue 컴포넌트의 주요 이벤트 중에 하나인 Emit의 용도는 무엇인지 설명을 요구한다.
 
-```
+```javascript
 		  /**
 	       * 현재 입력상태 저장해주세요
 	       * @property {Object} conditionDatum - 현재 폼 입력 상태
