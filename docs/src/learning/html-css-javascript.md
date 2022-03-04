@@ -37,7 +37,7 @@
 함수 컨텍스트는 전역 컨텍스트와 달리 매개변수와 인수 필요 (arguments 프로퍼티)  
 
 ### 1.2 Scope, Scope Chain
-  - 현재 컨텍스트가 참조하여 값을 얻을 수 있는 변수 및 함수의 범위 (일련의 바구니 내지 컨테이너)
+  - 현재 컨텍스트가 값을 얻을 수 있는 변수 및 함수의 범위 (일련의 바구니 내지 컨테이너)
   - 현재 컨텍스트를 시작으로 상위 컨텍스트 및 전역 컨텍스트를 가리킨다
   - 특정 변수에 담긴 값을 읽는다 -> 순차로 컨텍스트의 Variable Look up 진행
 
@@ -132,12 +132,6 @@ function bluify(e) {
 :::
 
 ## 2. Closure
-
-함수 내에서 함수를 선언하고 정의하면 클로저라고 얘기를 한다.
-하지만 대부분 내장 함수 그 자체를 리턴할 수 있고, 내부 함수의
-스코프가 감싸고 있는 함수까지 해당하므로 값을 은닉하거나 private하게 사용할 수 있다.
-그러나 내부변수를 참조하는 동안에는 내부 변수가 차지하는 메모리를 GC가 회수하지 않는다.
-
 - 클로저는, 함수를 선언할 때 만들어지는 유효 범위
 - 렉시컬 스코프와 관련이 깊고, 렉시컬 스코프는 코드에 함수를 선언하는 위치에 따라, 정의되는 스코프이다. (스코프 체이닝을 이해하고, 내가 스콥을 기술적으로 정의하는 것)
 - 실행 콘텍스트의 Scope 체이닝와 동일하게 동작
@@ -175,6 +169,8 @@ Javascript에서 Object를 정의할 수 있는데,
 - Object는 Null
 - String은 Object
 - 기타 등등 ..
+
+클래스 만들때 사용
 
 ## 4. Promise, Async Await
 주로 비동기 작업에 적합하다.
@@ -233,9 +229,6 @@ console.log(await hello()) // "Hello"
 메인스레드 하나에서 동작하기 땜에 콜 스택에 쌓이는 EC 중에
 당장 처리되지 않는 EC 들은 이벤트 큐에 쌓였다가 콜 스택에 배치되는거임
 :::
-
-### 쓰임새
-클래스 만들때 사용
 
 ## 7. Event Listener
 브라우저가 이벤트를 감지하는 방법
@@ -314,4 +307,3 @@ Element의 내부 상하좌우 간격을 넓힐 것이냐
 - [event delegation, bubbling, capturing](https://gomakethings.com/whats-the-difference-between-javascript-event-delegation-bubbling-and-capturing/)
 - [bubbling & capturing](https://ko.javascript.info/bubbling-and-capturing)
 - [Garbage Collection](https://ko.javascript.info/garbage-collection)
-- [Closure](https://hyunseob.github.io/2016/08/30/javascript-closure/)
