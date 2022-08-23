@@ -16,15 +16,15 @@
       </tr>
       <tr>
         <td>Github</td>
-        <td>https://github.com/byungster</td>
+        <td><a href="https://github.com/byungster">@Byungster</a></td>
       </tr>
       <tr>
         <td>Velog</td>
-        <td>https://velog.io/@bhkim</td>
+        <td><a href="https://velog.io/@bhkim">@bhkim</a></td>
       </tr>
       <tr>
         <td>Twitter</td>
-        <td>https://twitter.com/byungster222</td>
+        <td><a href="https://twitter.com/byungster222">@byungster222</a></td>
       </tr>
     </table>
   </div>
