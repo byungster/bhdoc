@@ -42,8 +42,8 @@ Vue.js, Vuex, ES5, ExpressJS, CSS3, HTML5
 - 회사 주력 서비스 리뉴얼 및 업그레이드, 시장 경쟁력 ↑
 
 #### 참고 자료
-- [trumpia's workbench](https://trumpia.com/product/workbench)
-- [플로우 차트 개발 경험에 대하여](/experience/1-workflow-editor)
+- [trumpia's workbench](https://www.trumpia.com/product/workbench-text-message-workflow)
+- [플로우 차트 개발 경험에 대하여](/portfolio/experience/1-workflow-editor)
 
 
 ## 2. Vue.js 기반 사용자 웹 개발
@@ -77,7 +77,7 @@ Vuejs, Storybook
 - UI 리뉴얼 및 회사의 신규 웹 런칭에 기여
 
 #### 참고 자료
--[레이아웃과 페이지, 그리고 컴포넌트 개발 경험에 대하여](/experience/2-componentize-on-vue)
+-[레이아웃과 페이지, 그리고 컴포넌트 개발 경험에 대하여](/portfolio/experience/2-componentize-on-vue)
 
 ## 3. Vue.js 도입 및 프로젝트 리뉴얼
 
@@ -114,7 +114,7 @@ Vuejs, Vuex, Vue CLI, ESLint, SASS, Typescript, Axios, ExpressJS, Apache HTTP Se
 - Vue & 모던 웹 이해 ↑ (webpack, babel)
 
 #### 참고 자료
-[프로젝트 리뉴얼을 위한 조사 경험에 대하여](/experience/3-porting-to-vue)
+[프로젝트 리뉴얼을 위한 조사 경험에 대하여](/portfolio/experience/3-porting-to-vue)
 
 ##  4. 플로우차트 제작도구 개발 및 정부 과제 수행 (18개월)
 
@@ -144,7 +144,7 @@ HTML5, ES5, CSS3, jQuery, Ajax, PHP, Oracle Database, Apache Server
 #### 참고 자료
 
 - [튜토리얼](https://youtu.be/_19bI5efWUY?t=267)
-- [플로우차트 개발 경험에 대하여 2](/experience/4-auto-campaigns)
+- [플로우차트 개발 경험에 대하여 2](/portfolio/experience/4-auto-campaigns)
 - [NTIS 일반 등재 정보](https://www.ntis.go.kr/outcomes/popup/srchTotlRschRpt.do?cmd=view&rstId=REP-2018-01110503225&srchTarget1=&srchTarget2=&srchText1=&srchText2=&returnURI=null&pageCode=RI_RSCHRPT_RST_DTL)
 
 

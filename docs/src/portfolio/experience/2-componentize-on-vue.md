@@ -22,7 +22,7 @@
 ### Graph
 
 #### 왜 만듦?
-[회사에서 기획된 "Flowchart Editor"](/experiece/1-workflow-editor) 라는 것을 만들어야 했습니다.
+[회사에서 기획된 "Flowchart Editor"](/portfolio/experiece/1-workflow-editor) 라는 것을 만들어야 했습니다.
 코어 Model은 Graph 자료구조 기반이었습니다.
 
 #### 어찌 만듦? 외부 라이브러리 조사
@@ -51,7 +51,7 @@ XML 기반이라함은, 그래프의 구성요소가 되는 노드와 엣지가 
 :::tip mxgraph?
 구글의 문서 도구 중, draw.io 라는 다이어그래밍 도구가 있습니다.  
 가령 Zoom/Minimap/DragDrop 기능 뿐만 아니라, 사용자의 이벤트와 관련된 여러가지 이벤트를 구현한 오픈소스 라이브러리입니다.  
-SVG Elements 기반이며, 자세한 사항은 [컴포넌트 개발 > Graph](/experience/2-componentize-on-vue#Graph) 영역에서 설명하였습니다.
+SVG Elements 기반이며, 자세한 사항은 [컴포넌트 개발 > Graph](/portfolio/experience/2-componentize-on-vue#Graph) 영역에서 설명하였습니다.
 :::
 
 #### 어찌 만듦? vue 컴포넌트에서 mxgraph 임포트하기
