@@ -50,7 +50,6 @@ module.exports = {
                     collapsable: true,
                     children: [
                         '',
-                        'my-specialty-experience',
                         'my-specialty-tech',
                         'my-specialty-culture',
                         'my-specialty-vision',
@@ -60,6 +59,7 @@ module.exports = {
                     title: '경험 상세',
                     collapsable: true,
                     children: [
+                        'experience/NOTE',
                         'experience/1-workflow-editor',
                         'experience/2-componentize-on-vue',
                         'experience/3-porting-to-vue',
