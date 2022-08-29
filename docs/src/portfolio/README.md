@@ -72,4 +72,4 @@
 :::
 
 ## Career Bar
-![img.png](img.png)
+![](https://imgur.com/uGcS1tD.png)
