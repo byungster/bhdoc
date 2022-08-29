@@ -116,10 +116,7 @@ vue와 연동하기 위하여 다음과 같이 설계하였습니다.
 특히, Graph의 Model에 대한 Cell의 생성/조회/수정/삭제는 Controller가 담당합니다.
 따라서 Graph의 Model, View, 그리고 Controller 에서 Cell의 생성/조회/수정/삭제를 담당하는 UI 개발을 담당하였습니다.
 
-#### Textarea
+###### 그 외
+[컴포넌트 개발 과정에서 경험한 내용들을 수록 중인 페이지](/portfolio/detail/p-vue-component)입니다.
 
-SMS 콘텐츠를 Edit하는 기능입니다.
-Textarea의 입력 리스너를 커스텀하여 제작되었습니다.
-여러가지 검사 (스팸워드, 글자수 길이, Coupon 번호, 외부 Text, URL 등의 가변적인 contents를 삽입할 수 있도록 하는 기능)
-별도로 추가되어 수정이 불가능하도록 만드는 작업이 가장 까다로웠습니다.
-SelectionStart, End 처리
+

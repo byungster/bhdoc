@@ -16,7 +16,7 @@
       </tr>
       <tr>
         <td>Github</td>
-        <td><a href="https://github.com/byungster">@Byungster</a></td>
+        <td><a href="https://github.com/byungster">@byungster</a></td>
       </tr>
       <tr>
         <td>Velog</td>
