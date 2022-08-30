@@ -64,6 +64,7 @@ WEB 관련, FE 관련 지식을 정리한다.
 - https://school.programmers.co.kr/learn/courses/13213
 - https://hh-bigdata-career.tistory.com/24
 - https://kbwplace.tistory.com/140
+- https://okky.kr/articles/457726
 - 백준 3687, 1912
 
 ### 소감
