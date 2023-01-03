@@ -50,9 +50,6 @@ module.exports = {
                     collapsable: true,
                     children: [
                         '',
-                        // 'my-specialty-tech',
-                        // 'my-specialty-culture',
-                        // 'my-specialty-vision',
                     ]
                 },
                 {
