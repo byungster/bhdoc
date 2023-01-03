@@ -35,28 +35,28 @@ module.exports = {
         sidebarDepth: 3,
         nav: [
             {
-                text: 'Portfolio',
+                text: 'Detail',
                 link: '/portfolio/'
             },
             {
-                text: 'Learning',
+                text: 'References',
                 link: '/learning/'
             },
         ],
         sidebar: {
             '/portfolio/': [
                 {
-                    title: '소개',
+                    title: 'Byung’s Detail',
                     collapsable: true,
                     children: [
                         '',
-                        'my-specialty-tech',
-                        'my-specialty-culture',
-                        'my-specialty-vision',
+                        // 'my-specialty-tech',
+                        // 'my-specialty-culture',
+                        // 'my-specialty-vision',
                     ]
                 },
                 {
-                    title: '경험 상세',
+                    title: 'Byung’s Experiences',
                     collapsable: true,
                     children: [
                         'experience/NOTE',
@@ -68,19 +68,23 @@ module.exports = {
                     ]
                 },
                 {
-                    title: 'Portfolio',
-                    collapsable: true,
-                    children: [
-                        'detail/p-api-sync-with-fe',
-                        'detail/p-how-to-import-storybook-vue',
-                        'detail/p-pwa',
-                        'detail/p-vue-component',
-                    ]
-                }
+                    title: 'Byung’s References',
+                    link: '/learning/'
+                },
+                // {
+                //     title: 'Portfolio',
+                //     collapsable: true,
+                //     children: [
+                //         'detail/p-api-sync-with-fe',
+                //         'detail/p-how-to-import-storybook-vue',
+                //         'detail/p-pwa',
+                //         'detail/p-vue-component',
+                //     ]
+                // }
             ],
             '/learning/': [
                 {
-                    title: 'Learning',
+                    title: 'Byung’s References',
                     collapsable: true,
                     children: [
                         '',
