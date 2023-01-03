@@ -46,7 +46,6 @@ keydown/up, mousedown/move/up, 등의 문자열의 변동을 일으키는 사용
 
 ### DB 쿼리 페이지 개발
 
-<admin-slick/>
 
 미결제 고객 조회
 크레딧 보유량 조회

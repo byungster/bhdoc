@@ -13,9 +13,9 @@ export default ({
   // ...apply enhancements for the site.
   Vue.mixin({
     mounted() {
-      import('vue-slick').then(function(m) {
-        Vue.use(m.default)
-      })
+      // import('vue-slick').then(function(m) {
+      //   Vue.use(m.default)
+      // })
     }
   })
 }
