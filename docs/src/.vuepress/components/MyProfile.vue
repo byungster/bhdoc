@@ -38,7 +38,7 @@ export default {
       currentDT: '',
     }
   },
-  created() {
+  mounted() {
     this.currentDT = this.getCurrentDateTime();
     setInterval(() => {
       this.currentDT = this.getCurrentDateTime();
