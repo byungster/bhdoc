@@ -57,6 +57,13 @@
 
 1. 개념 점검
 2. 문제 풀이 (유형 점검)
+3. CCI
+  - https://www.quora.com/Would-you-recommend-the-book-Cracking-the-Coding-Interview-to-a-front-end-developer
+  - https://news.ycombinator.com/item?id=31903731
+  - http://www.yes24.com/Product/Goods/44305533
+  - https://github.com/careercup/CtCI-6th-Edition-JavaScript
+
+
 
 ##### 개인적인 우선순위
 1. 완전 탐색 + DP(TopDown, BottomUp)(=재귀or순열) + Big O
